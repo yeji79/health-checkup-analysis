@@ -91,7 +91,7 @@ set_korean_font()
 # ── [경로 · 난수 · 변수 정의] ─────────────────────────────────
 DATA_PATH = os.path.join(BASE_DIR, 'data', '건강검진_실습데이터.xlsx')
 
-SEED = 45
+SEED = 42
 np.random.seed(SEED)
 
 num_cols = ['age', 'bmi', 'waist', 'sbp', 'glucose', 'tg', 'hdl', 'crp']
