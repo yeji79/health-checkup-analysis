@@ -91,7 +91,7 @@ set_korean_font()
 # ── [경로 · 난수 · 변수 정의] ─────────────────────────────────
 DATA_PATH = os.path.join(BASE_DIR, 'data', '건강검진_실습데이터.xlsx')
 
-SEED = 42
+SEED = 45 #기존 seed 42
 np.random.seed(SEED)
 
 num_cols = ['age', 'bmi', 'waist', 'sbp', 'glucose', 'tg', 'hdl', 'crp']
@@ -309,3 +309,5 @@ save_table(pd.DataFrame({'지표': ['AUC'], '값': [round(auc, 3)]}), 'auc')
 print(f"\n분석 완료. 결과는 results/ 폴더에 저장되었습니다.")
 print(f"  - 그림: results/figures/  (PNG {_fig_counter['n']}개)")
 print(f"  - 표:   results/tables/   (CSV)")
+
+#git 코드변경 확인하기
